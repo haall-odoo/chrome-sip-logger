@@ -1,0 +1,21 @@
+# Paragraph 1: Source package info
+Source: chrome-sip-logger
+Section: misc
+Priority: optional
+Maintainer: Odoo S.A. <besysadmin@odoo.com>
+Build-Depends: debhelper-compat (= 13), devscripts
+Standards-Version: 4.6.2
+
+# Paragraph 2: Binary package info (separated by a blank line)
+Package: chrome-sip-logger
+Architecture: any
+Pre-Depends: adduser
+Depends:    ${misc:Depends},
+            build-essential,
+            google-chrome-stable,
+            python3
+Description: This package install a service to rotate sip log into chrome
+ This package install a new version of the google-chrome.desktop
+ enabling logging, then it also install a cron script that is
+ used to parse and remove useless logs.
+ The only logs kept are the console log of SIP (Odoo Softphone).

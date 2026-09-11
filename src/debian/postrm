@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -ex
+
+
+if [ "$1" = "remove" ] || [ "$1" = "purge"]; then
+    xdg-desktop-menu forceupdate
+    update-desktop-database
+fi
+
+
+#DEBHELPER#
+
+
+exit 0

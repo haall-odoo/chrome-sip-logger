@@ -1,0 +1,9 @@
+[Unit]
+Description=Parse, Store and Rotate hourly SIP log from Odoo
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

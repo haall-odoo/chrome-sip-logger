@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+BUILD_DIR = build
+
+.SILENT:
+
+%:
+	dh $@ --builddirectory=$(BUILD_DIR)
+
+
+override_dh_auto_build:
+	dh_auto_build
+
+override_dh_clean:
+	dh_clean
