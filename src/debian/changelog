@@ -1,7 +1,8 @@
-chrome-sip-logger (0.1.0) UNRELEASED; urgency=medium
+chrome-sip-logger (1.0.0) noble; urgency=low
 
 
   [ haall ]
   * [2026-09-11 13:25] Adding the skeletton
+  * [2026-09-17 08:57] Journald add SIP entry
 
  -- haall <haall@odoo.com>  Thu, 04 Jun 2026 12:56:52 +0200

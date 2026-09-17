@@ -1,6 +1,0 @@
-[Unit]
-Description=Parse, Store and Rotate SIP log from Odoo into /var/log/chrome-sip-logger
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/chrome-sip-logger

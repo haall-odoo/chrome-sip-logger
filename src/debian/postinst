@@ -4,8 +4,7 @@ set -ex
 
 
 if [ "$1" = "configure" ]; then
-    xdg-desktop-menu forceupdate
-    update-desktop-database
+    update-desktop-database /usr/share/applications
 fi
 
 
